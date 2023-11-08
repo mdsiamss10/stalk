@@ -132,7 +132,7 @@ function ChatComponent({
                           user.isTyping && user.email !== session?.user?.email
                             ? "border-4 border-primary transition-all rounded-full"
                             : ""
-                        } ${user.email === session?.user?.email && "hidden"}`}
+                        } ${user.email !== session?.user?.email && "hidden"}`}
                         alt="Image"
                       />
                     </>
