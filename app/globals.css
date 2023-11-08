@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+  min-height: 100lvh;
+  max-height: 100lvh;
+  overflow-y: auto;
+}
+.chat-bubble::before {
+  display: none;
+}
